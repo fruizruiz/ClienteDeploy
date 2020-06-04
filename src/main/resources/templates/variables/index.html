@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Enviar Párametros dinamicos del Request HTTP GET</title>
+</head>
+<body>
+	<h1>Enviar Párametros dinamicos del Request HTTP GET</h1>
+	<ul>
+		<li><a th:href="@{/variables/string/}+${'Salida 1'}">Salida
+				1 </a></li>
+		<li><a th:href="@{/variables/string/}+${nombre}+'/'+${numero}">Salida
+				2 </a></li>
+	
+	</ul>
+
+</body>
+</html>
